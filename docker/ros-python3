@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+source /opt/ros/humble/setup.bash
+[ -f /workspaces/rover-sim/install/setup.bash ] && source /workspaces/rover-sim/install/setup.bash
+exec /usr/bin/python3 "$@"

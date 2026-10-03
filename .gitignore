@@ -1,0 +1,7 @@
+build/
+install/
+log/
+.idea/
+__pycache__/
+.pytest_cache/
+.DS_Store

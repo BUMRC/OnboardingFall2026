@@ -1,0 +1,15 @@
+name: rover-sim
+
+services:
+  sim:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: rover-sim:humble
+    hostname: rover-sim
+    shm_size: 2gb
+    ports:
+      - "127.0.0.1:6080:80"
+      - "127.0.0.1:2222:22"
+    volumes:
+      - .:/workspaces/rover-sim
